@@ -51,6 +51,19 @@ public class House {
         this.hasGarden = garden;
     }
 
+
+    @Override
+    public String toString() {
+        return "{" +
+            " numberOfRooms='" + this.getNumberOfRooms() + "'" +
+            ", hasPool='" + this.hasPool() + "'" +
+            ", hasGarage='" + this.hasGarage() + "'" +
+            ", hasFancyStatue='" + this.hasFancyStatue() + "'" +
+            ", hasGarden='" + this.hasGarden() + "'" +
+            "}";
+    }
+    
+
     public static class HouseBuilder {
         public HouseBuilder(final int numberOfRooms) {
             this.numberOfRooms = numberOfRooms;
